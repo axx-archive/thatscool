@@ -106,7 +106,7 @@ img {
 
 .edge-note--sass {
   bottom: 28px;
-  left: 190px;
+  left: 32px;
 }
 
 .edge-note--bottom {
@@ -217,6 +217,7 @@ img {
   transform-origin: 50% 50%;
   transition: transform var(--dur-med) var(--ease-out), filter var(--dur-med) var(--ease-out);
   user-select: none;
+  -webkit-user-drag: none;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }

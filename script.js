@@ -33,6 +33,11 @@ for (const sticker of stickerElements) {
     pointerState = null;
   };
 
+  // Links native-drag by default, which swallows the pointer gesture.
+  sticker.addEventListener("dragstart", (event) => {
+    event.preventDefault();
+  });
+
   sticker.addEventListener("pointerdown", (event) => {
     if (pointerState || event.button !== 0) return;
 
