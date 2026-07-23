@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" role="img" aria-labelledby="title desc">
+  <title id="title">Cool Guy</title>
+  <desc id="desc">A friendly character made from the two O eyes and swoosh smile in the That's Cool logo.</desc>
+  <defs>
+    <filter id="paperShadow" x="-30%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#0a0a0a" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <g id="cool-character" filter="url(#paperShadow)">
+    <g fill="none" stroke="#0a0a0a" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M49 123 22 105 12 79" stroke-width="11"/>
+      <path d="M191 122 216 99 228 70" stroke-width="11"/>
+      <path d="M91 211 82 239" stroke-width="12"/>
+      <path d="M151 211 160 239" stroke-width="12"/>
+    </g>
+
+    <g fill="#11ed32" stroke="#0a0a0a" stroke-width="5">
+      <circle cx="11" cy="70" r="13"/>
+      <circle cx="229" cy="61" r="13"/>
+      <path d="M57 244c13-8 28-8 38 0l-4 11H55Z"/>
+      <path d="M146 244c13-8 28-8 38 0l2 11h-39Z"/>
+    </g>
+
+    <path d="M47 39c19-20 126-24 150 5 18 22 17 127-4 162-18 30-124 33-149 4-23-27-20-146 3-171Z" fill="#11ed32" transform="translate(9 9)"/>
+    <path d="M47 39c19-20 126-24 150 5 18 22 17 127-4 162-18 30-124 33-149 4-23-27-20-146 3-171Z" fill="#fff" stroke="#0a0a0a" stroke-width="6"/>
+
+    <g fill="#0a0a0a">
+      <ellipse cx="88" cy="99" rx="35" ry="48" transform="rotate(-5 88 99)"/>
+      <ellipse cx="156" cy="98" rx="34" ry="47" transform="rotate(5 156 98)"/>
+    </g>
+    <g fill="#fff">
+      <ellipse cx="91" cy="99" rx="13" ry="22"/>
+      <ellipse cx="153" cy="98" rx="13" ry="22"/>
+    </g>
+
+    <path d="M61 157c26 25 74 36 113 12 12-7 20-6 24 0-9 30-48 45-85 41-29-3-55-19-66-39-4-8 4-19 14-14Z" fill="#0a0a0a"/>
+    <path d="M65 159c24 18 63 26 96 10" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="6" opacity="0.22"/>
+  </g>
+</svg>

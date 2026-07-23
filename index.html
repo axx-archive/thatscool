@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="That's Cool — a small studio making useful things for the internet."
+    />
+    <meta name="theme-color" content="#f6f2e8" />
+    <title>That's Cool</title>
+    <link rel="icon" href="assets/coolguy-favicon.png" type="image/png" sizes="256x256" />
+    <link rel="apple-touch-icon" href="assets/coolguy-favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#products">Skip to our products</a>
+
+    <main class="page-shell">
+      <p class="edge-note edge-note--top" aria-hidden="true">
+        EST. SOMEWHERE<br />ON THE INTERNET
+      </p>
+      <p class="edge-note edge-note--side" aria-hidden="true">STUDIO / 03</p>
+      <p class="edge-note edge-note--sass" data-sass aria-hidden="true">
+        NO BUSINESS MODEL, NO PROBLEM
+      </p>
+      <p class="edge-note edge-note--bottom" aria-hidden="true">
+        © 2026 THAT’S COOL
+      </p>
+
+      <section class="hero" aria-labelledby="page-title">
+        <h1 id="page-title" class="visually-hidden">That's Cool</h1>
+        <div class="hero-mark">
+          <img
+            class="hero-logo"
+            src="assets/thatscool-logo.png"
+            alt="That's Cool"
+            width="1254"
+            height="1254"
+            fetchpriority="high"
+          />
+        </div>
+      </section>
+
+      <section class="products" id="products" aria-labelledby="products-title">
+        <h2 id="products-title" class="visually-hidden">Products we’ve launched</h2>
+
+        <article class="sticker-slot sticker-slot--stride">
+          <h3 class="visually-hidden">STRIDE</h3>
+          <a
+            class="sticker sticker--stride"
+            data-sticker
+            href="stride/"
+            aria-label="Open STRIDE — the living company operating system. Drag to move."
+          >
+            <img
+              src="assets/stride-work-in-stride.svg"
+              alt=""
+              width="760"
+              height="250"
+              draggable="false"
+            />
+          </a>
+        </article>
+
+        <article class="sticker-slot sticker-slot--longish">
+          <h3 class="visually-hidden">LONGISH</h3>
+          <button
+            class="sticker sticker--longish"
+            data-sticker
+            type="button"
+            aria-label="Longish — an autonomous investment firm that researches and trades through Robinhood. Drag to move."
+          >
+            <img
+              src="assets/longish-attitude-sticker.svg"
+              alt=""
+              width="480"
+              height="480"
+              draggable="false"
+            />
+          </button>
+        </article>
+      </section>
+
+      <div class="sticker-slot sticker-slot--coolguy">
+        <div class="bubble" data-bubble aria-hidden="true">
+          THAT’S COOL<span class="bubble-tail"></span>
+        </div>
+        <button
+          class="sticker sticker--coolguy"
+          data-sticker
+          data-bubble-toggle
+          type="button"
+          aria-label="Cool Guy — say hi. Drag to move."
+        >
+          <img
+            src="assets/coolguy-sticker.png"
+            alt=""
+            width="1404"
+            height="1404"
+            draggable="false"
+          />
+        </button>
+      </div>
+    </main>
+
+    <script src="script.js?v=studio-1" defer></script>
+  </body>
+</html>

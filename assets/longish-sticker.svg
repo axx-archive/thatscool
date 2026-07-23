@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" role="img" aria-labelledby="title desc">
+  <title id="title">LONGISH</title>
+  <desc id="desc">A glossy 2009 financial-terminal inspired LONGISH sticker with the Cool Guy character at a Wall Street monitor desk.</desc>
+  <defs>
+    <linearGradient id="badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#269bd1"/>
+      <stop offset="0.42" stop-color="#1677b8"/>
+      <stop offset="1" stop-color="#0b2845"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.22" stop-color="#b9c9d1"/>
+      <stop offset="0.5" stop-color="#f4f8f9"/>
+      <stop offset="1" stop-color="#80909a"/>
+    </linearGradient>
+    <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff" stop-opacity="0.48"/>
+      <stop offset="0.85" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d5dde0"/>
+      <stop offset="1" stop-color="#667780"/>
+    </linearGradient>
+    <pattern id="terminalGrid" width="18" height="14" patternUnits="userSpaceOnUse">
+      <path d="M18 0H0v14" fill="none" stroke="#8fd5ff" stroke-opacity="0.16" stroke-width="1"/>
+    </pattern>
+    <filter id="screenGlow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#001d31" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <path d="M77 24h446c22 0 40 18 40 40v247c0 22-18 40-40 40H363l-19 15h-88l-19-15H77c-22 0-40-18-40-40V64c0-22 18-40 40-40Z" fill="#fff" stroke="#d7dce2" stroke-width="3"/>
+  <path d="M83 42h434c15 0 28 13 28 28v234c0 15-13 28-28 28H357l-18 15h-78l-18-15H83c-15 0-28-13-28-28V70c0-15 13-28 28-28Z" fill="url(#badge)" stroke="#0b2137" stroke-width="5"/>
+  <path d="M84 50h432c11 0 20 9 20 20v51c-80 24-165 32-255 24-70-6-143-19-217-41V70c0-11 9-20 20-20Z" fill="url(#gloss)"/>
+
+  <text x="78" y="70" fill="#cdeeff" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" letter-spacing="2">THE PATIENT MONEY DEPT. / DESK 01</text>
+  <text x="79" y="117" fill="#08243d" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="900" letter-spacing="-2" opacity="0.8">LONGISH</text>
+  <text x="76" y="113" fill="#fffdf7" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="900" letter-spacing="-2">LONGISH</text>
+  <rect x="399" y="78" width="118" height="29" rx="14" fill="url(#chrome)" stroke="#17384f" stroke-width="2"/>
+  <circle cx="417" cy="92" r="6" fill="#68b82e" stroke="#315e14" stroke-width="2"/>
+  <text x="430" y="96" fill="#102b49" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="1">STILL HOLDING</text>
+
+  <!-- Trading monitors -->
+  <g filter="url(#screenGlow)">
+    <g>
+      <path d="M79 143h137l-6 100H85Z" fill="#081d2a" stroke="url(#chrome)" stroke-width="6"/>
+      <path d="M89 154h116l-5 77H94Z" fill="url(#terminalGrid)"/>
+      <path d="m98 211 18-10 18 4 18-23 18 10 26-28" fill="none" stroke="#68b82e" stroke-width="4"/>
+      <text x="98" y="171" fill="#7fd3ff" font-family="Courier New, monospace" font-size="8" font-weight="700">TIME HORIZON</text>
+      <text x="98" y="184" fill="#fff" font-family="Courier New, monospace" font-size="11" font-weight="700">VERY LONG</text>
+    </g>
+    <g>
+      <path d="M223 128h154l-3 111H226Z" fill="#081d2a" stroke="url(#chrome)" stroke-width="6"/>
+      <path d="M235 141h129v85H237Z" fill="url(#terminalGrid)"/>
+      <g fill="#27b7a5">
+        <rect x="251" y="193" width="13" height="21"/><rect x="273" y="176" width="13" height="38"/><rect x="295" y="183" width="13" height="31"/><rect x="317" y="156" width="13" height="58"/><rect x="339" y="168" width="13" height="46"/>
+      </g>
+      <text x="247" y="155" fill="#fff" font-family="Courier New, monospace" font-size="8" font-weight="700">READ &gt; REACT</text>
+    </g>
+    <g>
+      <path d="M384 143h137l-6 100H390Z" fill="#081d2a" stroke="url(#chrome)" stroke-width="6"/>
+      <path d="M395 154h115l-5 77H399Z" fill="url(#terminalGrid)"/>
+      <path d="m402 207 22-2 19-19 20 6 34-31" fill="none" stroke="#00d9ff" stroke-width="4"/>
+      <text x="404" y="171" fill="#7fd3ff" font-family="Courier New, monospace" font-size="8" font-weight="700">IMPULSE</text>
+      <text x="404" y="184" fill="#fff" font-family="Courier New, monospace" font-size="11" font-weight="700">MUTED</text>
+    </g>
+  </g>
+
+  <path d="M72 253h456l-26 50H98Z" fill="url(#desk)" stroke="#263d49" stroke-width="4"/>
+  <path d="M118 264h139l-12 23H106Z" fill="#203039" stroke="#71848e" stroke-width="2"/>
+  <g stroke="#93a3ab" stroke-width="2">
+    <path d="m126 270 118 0M119 277h120M114 283h123"/>
+    <path d="M138 265v20M156 265v20M174 265v20M192 265v20M210 265v20M228 265v20"/>
+  </g>
+  <rect x="382" y="263" width="93" height="25" rx="12.5" fill="#f4f8f9" stroke="#405862" stroke-width="2"/>
+  <text x="429" y="279" fill="#102b49" font-family="Georgia, serif" font-size="10" font-style="italic" font-weight="700" text-anchor="middle">log off early</text>
+
+  <g transform="translate(250 184) scale(0.42)">
+    <g fill="none" stroke="#0a0a0a" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M49 123 22 105 12 79" stroke-width="11"/>
+      <path d="M191 122 216 99 228 70" stroke-width="11"/>
+      <path d="M91 211 82 239" stroke-width="12"/>
+      <path d="M151 211 160 239" stroke-width="12"/>
+    </g>
+    <g fill="#11ed32" stroke="#0a0a0a" stroke-width="5">
+      <circle cx="11" cy="70" r="13"/>
+      <circle cx="229" cy="61" r="13"/>
+      <path d="M57 244c13-8 28-8 38 0l-4 11H55Z"/>
+      <path d="M146 244c13-8 28-8 38 0l2 11h-39Z"/>
+    </g>
+    <path d="M47 39c19-20 126-24 150 5 18 22 17 127-4 162-18 30-124 33-149 4-23-27-20-146 3-171Z" fill="#11ed32" transform="translate(9 9)"/>
+    <path d="M47 39c19-20 126-24 150 5 18 22 17 127-4 162-18 30-124 33-149 4-23-27-20-146 3-171Z" fill="#fff" stroke="#0a0a0a" stroke-width="6"/>
+    <g fill="#0a0a0a">
+      <ellipse cx="88" cy="99" rx="35" ry="48" transform="rotate(-5 88 99)"/>
+      <ellipse cx="156" cy="98" rx="34" ry="47" transform="rotate(5 156 98)"/>
+    </g>
+    <g fill="#fff">
+      <ellipse cx="91" cy="99" rx="13" ry="22"/>
+      <ellipse cx="153" cy="98" rx="13" ry="22"/>
+    </g>
+    <path d="M61 157c26 25 74 36 113 12 12-7 20-6 24 0-9 30-48 45-85 41-29-3-55-19-66-39-4-8 4-19 14-14Z" fill="#0a0a0a"/>
+    <path d="M65 159c24 18 63 26 96 10" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="6" opacity="0.22"/>
+  </g>
+  <path d="M296 261h14l-4 18-9 8-9-8Z" fill="#bf2731" stroke="#5f1016" stroke-width="2"/>
+
+  <rect x="81" y="304" width="438" height="20" rx="10" fill="#071b2b" stroke="#4f7184" stroke-width="2"/>
+  <text x="300" y="318" fill="#d7f3ff" font-family="Courier New, Courier, monospace" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1.25">READ-ONLY  •  LONG-HORIZON  •  PATIENCE COMPOUNDS</text>
+</svg>

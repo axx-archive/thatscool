@@ -1,0 +1,382 @@
+:root {
+  /* Studio (landing) palette — canon: That's Cool design system tokens */
+  --ink: #0a0a0a;
+  --paper-studio: #f6f2e8;
+  --acid-studio: #11ed32;
+  /* Type — landing intentionally uses unfussy system faces */
+  --sans-studio: Arial, Helvetica, sans-serif;
+  --mono-studio: "Courier New", Courier, monospace;
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
+  --dur-fast: 160ms;
+  --dur-med: 180ms;
+  /* Background textures — quiet: felt, not seen first */
+  --dots-studio:
+    radial-gradient(circle at 1px 1px, rgba(10, 10, 10, 0.09) 1px, transparent 1.15px)
+    0 0 / 20px 20px;
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--paper-studio);
+  color: var(--ink);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100svh;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--grain), var(--dots-studio), var(--paper-studio);
+  font-family: var(--sans-studio);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 100;
+  top: 24px;
+  left: 24px;
+  padding: 10px 14px;
+  border-radius: 999px; /* canon exception: the skip-link pill */
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  transform: translateY(-220%);
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.edge-note {
+  position: absolute;
+  z-index: 7;
+  margin: 0;
+  pointer-events: none;
+  color: var(--ink);
+  font-family: var(--mono-studio);
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.12em;
+}
+
+.edge-note--top {
+  top: 28px;
+  left: 32px;
+}
+
+.edge-note--side {
+  top: 50%;
+  right: 22px;
+  writing-mode: vertical-rl;
+  transform: translateY(-50%);
+}
+
+.edge-note--sass {
+  bottom: 28px;
+  left: 190px;
+}
+
+.edge-note--bottom {
+  right: 32px;
+  bottom: 28px;
+}
+
+.page-shell {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.hero-mark {
+  position: relative;
+  width: min(45vw, 54svh, 560px);
+  min-width: 390px;
+  animation: arrive 760ms var(--ease-out) both;
+}
+
+.hero-mark::after {
+  position: absolute;
+  z-index: -1;
+  right: 8%;
+  bottom: 10%;
+  width: 72%;
+  height: 18%;
+  border-radius: 50%;
+  background: rgba(17, 237, 50, 0.15);
+  content: "";
+  filter: blur(30px);
+}
+
+.hero-logo {
+  width: 100%;
+  height: auto;
+  filter:
+    drop-shadow(9px 10px 0 var(--acid-studio))
+    drop-shadow(0 12px 18px rgba(32, 35, 37, 0.22));
+  transform: rotate(-1.5deg);
+}
+
+/* Product stickers — scattered around the mark, every one slightly rotated */
+
+.products {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  pointer-events: none;
+  animation: arrive 680ms 130ms var(--ease-out) both;
+}
+
+.sticker-slot {
+  position: absolute;
+  pointer-events: auto;
+}
+
+.sticker-slot--stride {
+  top: 9%;
+  left: 4%;
+  width: min(30vw, 460px);
+}
+
+.sticker-slot--longish {
+  top: 16%;
+  right: 6%;
+  width: min(17vw, 250px);
+}
+
+.sticker-slot--coolguy {
+  z-index: 20;
+  bottom: 14%;
+  left: 13%;
+  width: 150px;
+  animation: arrive 680ms 260ms var(--ease-out) both;
+}
+
+.sticker {
+  --base-rotation: 0deg;
+  --counter-tilt: 2.5deg;
+  --lift: 0px;
+  appearance: none;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: grab;
+  font: inherit;
+  touch-action: none;
+  transform:
+    translate3d(var(--drag-x, 0px), calc(var(--drag-y, 0px) + var(--lift)), 0)
+    rotate(calc(var(--base-rotation) + var(--tilt-shift, 0deg)));
+  transform-origin: 50% 50%;
+  transition: transform var(--dur-med) var(--ease-out), filter var(--dur-med) var(--ease-out);
+  user-select: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sticker img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.sticker--stride {
+  --base-rotation: -5deg;
+}
+
+.sticker--longish {
+  --base-rotation: 7deg;
+  --counter-tilt: -2.5deg;
+}
+
+.sticker--coolguy {
+  --base-rotation: -6deg;
+}
+
+/* Hover: lift 5px and counter-rotate toward level — the sticker wobble.
+   Kept applied while dragging so the lift never snaps mid-gesture. */
+@media (hover: hover) {
+  .sticker:hover {
+    --lift: -5px;
+    --tilt-shift: var(--counter-tilt);
+  }
+}
+
+.sticker:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 5px;
+}
+
+.sticker[data-dragging="true"] {
+  z-index: 9;
+  cursor: grabbing;
+  filter: drop-shadow(0 8px 8px rgba(0, 0, 0, 0.16));
+  transition-duration: 0ms;
+}
+
+/* Cool Guy's comic speech bubble — follows him while dragged */
+
+.bubble {
+  position: absolute;
+  z-index: 21;
+  bottom: calc(148px - var(--drag-y, 0px));
+  left: calc(92px + var(--drag-x, 0px));
+  padding: 10px 14px;
+  border: 2px solid var(--ink);
+  background: #fff;
+  box-shadow: 4px 4px 0 var(--ink);
+  font: 700 12px/1 var(--mono-studio);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  transform: rotate(-2deg) scale(0);
+  transform-origin: 0 100%;
+  transition: transform 220ms var(--ease-out);
+  pointer-events: none;
+}
+
+.bubble[data-open="true"] {
+  transform: rotate(-2deg) scale(1);
+}
+
+.bubble-tail {
+  position: absolute;
+  bottom: -9px;
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  border-right: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  background: #fff;
+  transform: rotate(45deg) skew(12deg, 12deg);
+}
+
+@keyframes arrive {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .edge-note--top {
+    top: 20px;
+    left: 20px;
+  }
+
+  .edge-note--side {
+    display: none;
+  }
+
+  .edge-note--sass {
+    bottom: 44px;
+    left: 20px;
+  }
+
+  .edge-note--bottom {
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .hero-mark {
+    width: min(78vw, 480px);
+    min-width: 0;
+  }
+
+  .hero-logo {
+    filter:
+      drop-shadow(6px 7px 0 var(--acid-studio))
+      drop-shadow(0 9px 14px rgba(32, 35, 37, 0.2));
+  }
+
+  .sticker-slot--stride {
+    top: 6%;
+    left: 3%;
+    width: min(52vw, 320px);
+  }
+
+  .sticker-slot--longish {
+    top: 15%;
+    right: 4%;
+    width: min(34vw, 185px);
+  }
+
+  .sticker-slot--coolguy {
+    bottom: 15%;
+    left: 8%;
+    width: 112px;
+  }
+
+  .bubble {
+    bottom: calc(112px - var(--drag-y, 0px));
+    left: calc(64px + var(--drag-x, 0px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-mark,
+  .products,
+  .sticker-slot--coolguy {
+    animation: none;
+  }
+
+  .skip-link,
+  .sticker,
+  .bubble {
+    transition-duration: 0.01ms;
+  }
+}

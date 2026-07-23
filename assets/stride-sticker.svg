@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" role="img" aria-labelledby="title desc">
+  <title id="title">STRIDE workspaceOS</title>
+  <desc id="desc">A 1990s office-sim inspired STRIDE workspaceOS sticker with the Cool Guy character.</desc>
+  <defs>
+    <linearGradient id="windowChrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eff1eb"/>
+      <stop offset="0.48" stop-color="#c8cbc5"/>
+      <stop offset="1" stop-color="#8b918e"/>
+    </linearGradient>
+    <linearGradient id="titleBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2f24a7"/>
+      <stop offset="0.55" stop-color="#6747ff"/>
+      <stop offset="1" stop-color="#00b9d2"/>
+    </linearGradient>
+    <pattern id="carpet" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="skewY(-24)">
+      <rect width="12" height="12" fill="#c9c6b8"/>
+      <rect width="6" height="6" fill="#b9b5a7" opacity="0.42"/>
+      <rect x="6" y="6" width="6" height="6" fill="#e0ddd0" opacity="0.42"/>
+    </pattern>
+    <pattern id="scanlines" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1" fill="#fff" opacity="0.08"/>
+    </pattern>
+    <filter id="tinyShadow" x="-30%" y="-30%" width="170%" height="180%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#0a0a0a" flood-opacity="0.26"/>
+    </filter>
+  </defs>
+
+  <path d="M72 24h456c20 0 36 16 36 36v253c0 20-16 36-36 36H346l-20 16h-52l-20-16H72c-20 0-36-16-36-36V60c0-20 16-36 36-36Z" fill="#fff" stroke="#d7dce2" stroke-width="3"/>
+  <path d="M77 41h446c13 0 24 11 24 24v240c0 13-11 24-24 24H77c-13 0-24-11-24-24V65c0-13 11-24 24-24Z" fill="url(#windowChrome)" stroke="#272b2d" stroke-width="5"/>
+
+  <path d="M77 49h446c9 0 16 7 16 16v50H61V65c0-9 7-16 16-16Z" fill="url(#titleBar)"/>
+  <path d="M62 113h477" stroke="#202427" stroke-width="4"/>
+  <g fill="#dce0dc" stroke="#25292c" stroke-width="2">
+    <rect x="474" y="63" width="18" height="18"/><rect x="495" y="63" width="18" height="18"/><rect x="516" y="63" width="18" height="18"/>
+  </g>
+  <path d="M501 77h7M520 67l10 10M530 67l-10 10" stroke="#25292c" stroke-width="2"/>
+
+  <g font-family="Courier New, Courier, monospace" font-weight="700">
+    <text x="79" y="70" fill="#d9ffff" font-size="10" letter-spacing="1.7">MEETINGASSIST // WORKSPACE OS</text>
+    <text x="78" y="105" fill="#101316" opacity="0.72" font-size="43" letter-spacing="4">STRIDE</text>
+    <text x="74" y="101" fill="#fff" font-size="43" letter-spacing="4">STRIDE</text>
+    <text x="374" y="99" fill="#b8ff2c" font-size="11" letter-spacing="1.5">● SYSTEM ONLINE</text>
+  </g>
+
+  <g clip-path="inset(0 round 0)">
+    <path d="M70 212 300 116l230 96-230 111Z" fill="url(#carpet)" stroke="#4c5352" stroke-width="3"/>
+    <path d="M70 212v31l230 101v-41Z" fill="#8e948c" stroke="#4c5352" stroke-width="3"/>
+    <path d="M530 212v31L300 364v-41Z" fill="#747d79" stroke="#4c5352" stroke-width="3"/>
+    <path d="M70 212 300 116l230 96" fill="none" stroke="#faf7e8" stroke-width="10" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Left workstation -->
+  <g filter="url(#tinyShadow)">
+    <path d="m101 200 86-38 70 29-87 41Z" fill="#f0c889" stroke="#4a3422" stroke-width="3"/>
+    <path d="m170 232 87-41v13l-87 41Z" fill="#9c653b" stroke="#4a3422" stroke-width="3"/>
+    <path d="m101 200 69 32v13l-69-32Z" fill="#bd7e4b" stroke="#4a3422" stroke-width="3"/>
+    <path d="m152 163 51 20v38l-51-20Z" fill="#22282b" stroke="#111" stroke-width="3"/>
+    <path d="m158 170 39 15v25l-39-15Z" fill="#00e5ff"/>
+    <path d="m158 170 39 15v25l-39-15Z" fill="url(#scanlines)"/>
+    <path d="m210 188 24 10-20 9-24-10Z" fill="#d8dcd8" stroke="#333" stroke-width="2"/>
+  </g>
+
+  <!-- Right workstation -->
+  <g filter="url(#tinyShadow)">
+    <path d="m351 187 80-33 69 29-81 37Z" fill="#d8dcde" stroke="#3d4549" stroke-width="3"/>
+    <path d="m419 220 81-37v13l-81 38Z" fill="#727b80" stroke="#3d4549" stroke-width="3"/>
+    <path d="m351 187 68 33v14l-68-33Z" fill="#9ca4a6" stroke="#3d4549" stroke-width="3"/>
+    <path d="m406 151 48 20v37l-48-20Z" fill="#1f2427" stroke="#111" stroke-width="3"/>
+    <path d="m412 158 36 15v24l-36-15Z" fill="#8f7cff"/>
+    <path d="m412 158 36 15v24l-36-15Z" fill="url(#scanlines)"/>
+    <circle cx="473" cy="201" r="10" fill="#b8ff2c" stroke="#29320d" stroke-width="3"/>
+  </g>
+
+  <!-- Conference table and office details -->
+  <g filter="url(#tinyShadow)">
+    <path d="m217 248 82-37 87 39-85 41Z" fill="#6a6f72" stroke="#24282a" stroke-width="3"/>
+    <path d="m301 291 85-41v13l-85 42Z" fill="#3c4245" stroke="#24282a" stroke-width="3"/>
+    <path d="m217 248 84 43v14l-84-44Z" fill="#51585b" stroke="#24282a" stroke-width="3"/>
+    <path d="m116 266 48-22 44 19-48 23Z" fill="#5b8c92" stroke="#26383b" stroke-width="3"/>
+    <path d="m434 263 42-18 29 13-42 20Z" fill="#7a5ea9" stroke="#352746" stroke-width="3"/>
+    <path d="m481 149 10-25 10 25Z" fill="#17883b" stroke="#0c4f23" stroke-width="2"/>
+    <path d="m475 149h32l-5 22h-22Z" fill="#bf7646" stroke="#5d3927" stroke-width="2"/>
+  </g>
+
+  <path d="M272 147h107l16 12-16 13h-66l-14 13 1-13h-28Z" fill="#fff" stroke="#0a0a0a" stroke-width="3"/>
+  <text x="284" y="163" fill="#0a0a0a" font-family="Courier New, Courier, monospace" font-size="10" font-weight="700" letter-spacing="1">OH, HEY. / 09:41</text>
+  <g transform="translate(250 160) scale(0.4)">
+    <g fill="none" stroke="#0a0a0a" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M49 123 22 105 12 79" stroke-width="11"/>
+      <path d="M191 122 216 99 228 70" stroke-width="11"/>
+      <path d="M91 211 82 239" stroke-width="12"/>
+      <path d="M151 211 160 239" stroke-width="12"/>
+    </g>
+    <g fill="#11ed32" stroke="#0a0a0a" stroke-width="5">
+      <circle cx="11" cy="70" r="13"/>
+      <circle cx="229" cy="61" r="13"/>
+      <path d="M57 244c13-8 28-8 38 0l-4 11H55Z"/>
+      <path d="M146 244c13-8 28-8 38 0l2 11h-39Z"/>
+    </g>
+    <path d="M47 39c19-20 126-24 150 5 18 22 17 127-4 162-18 30-124 33-149 4-23-27-20-146 3-171Z" fill="#11ed32" transform="translate(9 9)"/>
+    <path d="M47 39c19-20 126-24 150 5 18 22 17 127-4 162-18 30-124 33-149 4-23-27-20-146 3-171Z" fill="#fff" stroke="#0a0a0a" stroke-width="6"/>
+    <g fill="#0a0a0a">
+      <ellipse cx="88" cy="99" rx="35" ry="48" transform="rotate(-5 88 99)"/>
+      <ellipse cx="156" cy="98" rx="34" ry="47" transform="rotate(5 156 98)"/>
+    </g>
+    <g fill="#fff">
+      <ellipse cx="91" cy="99" rx="13" ry="22"/>
+      <ellipse cx="153" cy="98" rx="13" ry="22"/>
+    </g>
+    <path d="M61 157c26 25 74 36 113 12 12-7 20-6 24 0-9 30-48 45-85 41-29-3-55-19-66-39-4-8 4-19 14-14Z" fill="#0a0a0a"/>
+    <path d="M65 159c24 18 63 26 96 10" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="6" opacity="0.22"/>
+  </g>
+
+  <rect x="82" y="297" width="436" height="22" rx="3" fill="#15191b" opacity="0.92"/>
+  <text x="96" y="312" fill="#b8ff2c" font-family="Courier New, Courier, monospace" font-size="10.5" font-weight="700" letter-spacing="1.35">ROOMS  •  AGENTS  •  MEMORY  •  EVERYONE IN ONE PLACE</text>
+</svg>
