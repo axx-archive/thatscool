@@ -334,23 +334,21 @@ button:focus-visible {
   transform: translate(4px, 4px) scale(0.96);
 }
 
-/* Maker's mark — the worldwide badge, stamped where a letter gets signed. */
-.maker-signature {
+.site-footer {
   display: grid;
-  justify-items: end;
-  gap: 20px;
-  padding: clamp(72px, 8vw, 110px) var(--page-x) clamp(56px, 6vw, 84px);
+  gap: clamp(36px, 4vw, 56px);
+  padding: clamp(48px, 5.5vw, 80px) var(--page-x) 26px;
+  color: #fff;
+  background: var(--ink);
+  font: 500 9px/1.4 var(--mono);
+  letter-spacing: 0.05em;
 }
 
-.maker-signature > span {
-  font: 500 10px/1.2 var(--mono);
-  letter-spacing: 0.13em;
-  text-align: right;
-}
-
-.maker-badge {
+/* The maker's mark, stamped in the sign-off block. */
+.footer-badge {
+  justify-self: end;
   display: block;
-  width: clamp(210px, 22vw, 300px);
+  width: clamp(150px, 14vw, 200px);
   min-width: 40px;
   min-height: 40px;
   text-decoration: none;
@@ -360,46 +358,35 @@ button:focus-visible {
   transition-timing-function: ease;
 }
 
-.maker-badge:hover {
+.footer-badge:hover {
   transform: translateY(-5px) rotate(-1deg);
 }
 
-.maker-badge:active {
+.footer-badge:active {
   transform: translateY(-1px) rotate(-2deg) scale(0.96);
 }
 
-.maker-badge img {
+.footer-badge img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.site-footer {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   gap: 32px;
-  align-items: start;
-  padding: 26px 28px;
-  color: #fff;
-  background: var(--ink);
-  font: 500 9px/1.4 var(--mono);
-  letter-spacing: 0.05em;
 }
 
-.site-footer a {
+.footer-row a {
   min-height: 40px;
   display: inline-flex;
-  align-items: flex-start;
+  align-items: flex-end;
   text-decoration: none;
 }
 
-.site-footer p {
-  max-width: 90ch;
-  justify-self: center;
-  text-align: center;
-}
-
-.site-footer span {
+.footer-row span {
   font-variant-numeric: tabular-nums;
 }
 
@@ -483,24 +470,12 @@ button:focus-visible {
     font-size: 10px;
   }
 
-  .maker-signature {
-    padding: 64px 18px 48px;
-  }
-
-  .maker-badge {
-    width: min(58vw, 250px);
-  }
-
   .site-footer {
-    grid-template-columns: 1fr auto;
-    padding: 24px 18px;
+    padding: 48px 18px 22px;
   }
 
-  .site-footer p {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    justify-self: start;
-    text-align: left;
+  .footer-badge {
+    width: 150px;
   }
 }
 
@@ -535,7 +510,7 @@ button:focus-visible {
   }
 
   .build-button,
-  .maker-badge {
+  .footer-badge {
     transition-duration: 0.01ms;
   }
 }
