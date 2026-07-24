@@ -320,8 +320,10 @@ img {
   }
 
   .edge-note--sass {
-    bottom: 44px;
+    bottom: 20px;
     left: 20px;
+    /* Leave room for the copyright on the shared baseline; wraps upward if tight. */
+    max-width: calc(100vw - 180px);
   }
 
   .edge-note--bottom {
