@@ -187,6 +187,12 @@ img {
   width: min(17vw, 250px);
 }
 
+.sticker-slot--titanic {
+  right: 7%;
+  bottom: 12%;
+  width: min(18vw, 265px);
+}
+
 .sticker-slot--coolguy {
   z-index: 20;
   bottom: 14%;
@@ -235,6 +241,11 @@ img {
 .sticker--longish {
   --base-rotation: 7deg;
   --counter-tilt: -2.5deg;
+}
+
+.sticker--titanic {
+  --base-rotation: 8deg;
+  --counter-tilt: -3deg;
 }
 
 .sticker--coolguy {
@@ -352,6 +363,12 @@ img {
     top: 15%;
     right: 4%;
     width: min(34vw, 185px);
+  }
+
+  .sticker-slot--titanic {
+    right: 4%;
+    bottom: 21%;
+    width: min(36vw, 190px);
   }
 
   .sticker-slot--coolguy {

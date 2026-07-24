@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 540" role="img" aria-labelledby="title desc">
+  <title id="title">Titanic: Adventure Out of Time</title>
+  <desc id="desc">A circular porthole sticker with an iceberg at sea, chrome Titanic lettering, and 1990s CD-ROM label details.</desc>
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="13" stdDeviation="9" flood-color="#111318" flood-opacity=".25"/>
+    </filter>
+    <linearGradient id="brass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2ca74"/>
+      <stop offset=".5" stop-color="#c8913e"/>
+      <stop offset="1" stop-color="#8a5a1e"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123f6e"/>
+      <stop offset=".62" stop-color="#0b2d52"/>
+      <stop offset="1" stop-color="#071f3a"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#b9dcf0"/>
+    </linearGradient>
+    <linearGradient id="chrome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdfdfd"/>
+      <stop offset=".55" stop-color="#c2ccd4"/>
+      <stop offset=".62" stop-color="#8fa3b2"/>
+      <stop offset="1" stop-color="#eef2f5"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- die-cut white edge -->
+    <circle cx="270" cy="270" r="258" fill="#fff"/>
+    <!-- brass porthole ring -->
+    <circle cx="270" cy="270" r="238" fill="url(#brass)" stroke="#111318" stroke-width="4"/>
+    <circle cx="270" cy="270" r="224" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="3"/>
+    <circle cx="270" cy="270" r="186" fill="none" stroke="#111318" stroke-width="4"/>
+    <!-- hinge + latch -->
+    <rect x="18" y="238" width="34" height="64" rx="10" fill="url(#brass)" stroke="#111318" stroke-width="4"/>
+    <circle cx="496" cy="330" r="15" fill="#f2ca74" stroke="#111318" stroke-width="4"/>
+    <rect x="486" y="326" width="52" height="9" rx="4" fill="#f2ca74" stroke="#111318" stroke-width="3" transform="rotate(24 486 330)"/>
+    <!-- bolts -->
+    <g fill="#ecc27a" stroke="#111318" stroke-width="3">
+      <circle cx="270" cy="59" r="10"/>
+      <circle cx="419" cy="121" r="10"/>
+      <circle cx="481" cy="270" r="10"/>
+      <circle cx="419" cy="419" r="10"/>
+      <circle cx="270" cy="481" r="10"/>
+      <circle cx="121" cy="419" r="10"/>
+      <circle cx="59" cy="270" r="10"/>
+      <circle cx="121" cy="121" r="10"/>
+    </g>
+    <!-- glass: night sea and the iceberg -->
+    <circle cx="270" cy="270" r="182" fill="url(#sea)"/>
+    <g fill="#fff">
+      <circle cx="180" cy="150" r="3"/>
+      <circle cx="330" cy="122" r="2.4"/>
+      <circle cx="372" cy="176" r="2.8"/>
+      <circle cx="150" cy="205" r="2.2"/>
+      <circle cx="228" cy="112" r="2.2"/>
+    </g>
+    <!-- berg -->
+    <path d="M195 330L242 176L282 232L306 190L352 330Z" fill="url(#ice)" stroke="#111318" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M242 176L282 232L262 330L226 330Z" fill="#9cc6e0" opacity=".55"/>
+    <!-- waterline -->
+    <path d="M96 330H444" stroke="#111318" stroke-width="4"/>
+    <path d="M110 356h74M206 356h58M300 356h94M150 384h64M256 384h96M200 412h72" stroke="#cfe4f4" stroke-opacity=".5" stroke-width="5" stroke-linecap="round"/>
+    <!-- title lockup, slapped on at a tilt -->
+    <g transform="rotate(-3 270 270)">
+      <text x="275" y="285" fill="#111318" opacity=".9" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="88" font-style="italic" font-weight="900" letter-spacing="-4">TITANIC</text>
+      <text x="268" y="278" fill="url(#chrome)" stroke="#111318" stroke-width="2.5" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="88" font-style="italic" font-weight="900" letter-spacing="-4">TITANIC</text>
+      <rect x="120" y="300" width="300" height="34" fill="#111318"/>
+      <text x="270" y="322" fill="#f2ca74" text-anchor="middle" font-family="Courier New, monospace" font-size="15" font-weight="700" letter-spacing="2.6">ADVENTURE OUT OF TIME</text>
+    </g>
+    <!-- 90s label chips -->
+    <g transform="rotate(6 270 84)">
+      <rect x="182" y="66" width="176" height="30" fill="#fff" stroke="#111318" stroke-width="3"/>
+      <text x="270" y="86" fill="#111318" text-anchor="middle" font-family="Courier New, monospace" font-size="14" font-weight="700" letter-spacing="1.6">1996 · 2×CD-ROM</text>
+    </g>
+    <g transform="rotate(-4 270 452)">
+      <rect x="152" y="436" width="236" height="32" fill="#f2ca74" stroke="#111318" stroke-width="3"/>
+      <text x="270" y="457" fill="#111318" text-anchor="middle" font-family="Courier New, monospace" font-size="13" font-weight="700" letter-spacing="1.4">NOW ON APPLE SILICON</text>
+    </g>
+  </g>
+</svg>
