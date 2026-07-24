@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 580" role="img" aria-labelledby="title desc">
+  <title id="title">Building Stuff That's Cool</title>
+  <desc id="desc">An oval worldwide-style badge: green wireframe globe with the That's Cool OO face, arched text reading Building Stuff That's Cool.</desc>
+  <defs>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="12" stdDeviation="8" flood-color="#111318" flood-opacity=".22"/>
+    </filter>
+    <clipPath id="globeClip">
+      <ellipse cx="380" cy="296" rx="206" ry="152"/>
+    </clipPath>
+    <path id="arcTop" d="M108 300A272 196 0 0 1 652 300" fill="none"/>
+    <path id="arcBottom" d="M126 300A254 184 0 0 0 634 300" fill="none"/>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <!-- die-cut white oval -->
+    <ellipse cx="380" cy="290" rx="366" ry="276" fill="#fff"/>
+    <ellipse cx="380" cy="290" rx="336" ry="246" fill="#fff" stroke="#111318" stroke-width="9"/>
+
+    <!-- wireframe globe -->
+    <g clip-path="url(#globeClip)" fill="none" stroke="#11ed32" stroke-width="6">
+      <path d="M174 296H586"/>
+      <path d="M202 220H558"/>
+      <path d="M202 372H558"/>
+      <ellipse cx="380" cy="296" rx="69" ry="152"/>
+      <ellipse cx="380" cy="296" rx="138" ry="152"/>
+      <path d="M380 144V448"/>
+    </g>
+    <ellipse cx="380" cy="296" rx="206" ry="152" fill="none" stroke="#11ed32" stroke-width="7"/>
+
+    <!-- the OO face, slapped over the world -->
+    <g transform="rotate(-2 380 300)">
+      <ellipse cx="330" cy="288" rx="56" ry="70" fill="#111318" transform="rotate(-7 330 288)"/>
+      <ellipse cx="333" cy="288" rx="21" ry="32" fill="#fff" transform="rotate(-7 333 288)"/>
+      <ellipse cx="434" cy="270" rx="56" ry="70" fill="#111318" transform="rotate(7 434 270)"/>
+      <ellipse cx="431" cy="270" rx="21" ry="32" fill="#fff" transform="rotate(7 431 270)"/>
+      <path d="M228 360C300 414 424 414 496 376C530 358 534 330 508 324C486 319 470 334 477 351C483 365 502 367 510 357" fill="none" stroke="#111318" stroke-width="32" stroke-linecap="round"/>
+    </g>
+
+    <!-- arched wordmarks -->
+    <text fill="#111318" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="64" font-weight="900" letter-spacing="4">
+      <textPath href="#arcTop" startOffset="50%" text-anchor="middle">BUILDING STUFF</textPath>
+    </text>
+    <text fill="#111318" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="64" font-weight="900" letter-spacing="4">
+      <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">THAT&#8217;S COOL</textPath>
+    </text>
+  </g>
+</svg>

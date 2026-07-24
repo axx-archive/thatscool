@@ -116,25 +116,10 @@
       </section>
 
       <section class="maker-signature" id="built-by" aria-label="Built by That’s Cool">
-        <p>BUILT BY</p>
-        <a class="maker-sticker" href="../" aria-label="That’s Cool home">
-          <img src="../assets/thatscool-logo.png" alt="That’s Cool" width="1254" height="1254" />
+        <a class="maker-badge" href="../" aria-label="That’s Cool home">
+          <img src="../assets/building-stuff-badge.svg" alt="" width="760" height="580" />
         </a>
         <span>A LITTLE LAB FOR IDEAS WE CAN’T LEAVE ALONE.</span>
-
-        <div class="coolguy-corner">
-          <div class="coolguy-bubble" data-bubble aria-hidden="true">
-            THAT’S COOL<span class="coolguy-bubble-tail"></span>
-          </div>
-          <button
-            class="coolguy-corner-button"
-            data-bubble-toggle
-            type="button"
-            aria-label="Cool Guy — say hi."
-          >
-            <img src="../assets/coolguy-sticker.png" alt="" width="1404" height="1404" />
-          </button>
-        </div>
       </section>
     </main>
 
@@ -144,22 +129,5 @@
       <span>© 2026 · THATSCOOL.XYZ</span>
     </footer>
 
-    <script>
-      (() => {
-        const button = document.querySelector("[data-bubble-toggle]");
-        const bubble = document.querySelector("[data-bubble]");
-        let timer = 0;
-        button.addEventListener("click", () => {
-          const open = bubble.dataset.open !== "true";
-          bubble.dataset.open = String(open);
-          clearTimeout(timer);
-          if (open) {
-            timer = setTimeout(() => {
-              bubble.dataset.open = "false";
-            }, 2600);
-          }
-        });
-      })();
-    </script>
   </body>
 </html>

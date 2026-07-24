@@ -334,129 +334,41 @@ button:focus-visible {
   transform: translate(4px, 4px) scale(0.96);
 }
 
+/* Maker's mark — the worldwide badge, stamped where a letter gets signed. */
 .maker-signature {
-  position: relative;
-  z-index: 2;
   display: grid;
-  min-height: clamp(440px, 58svh, 560px);
-  padding: 48px var(--page-x) 44px;
-  place-content: center;
-  justify-items: center;
-  overflow: hidden;
-  text-align: center;
+  justify-items: end;
+  gap: 20px;
+  padding: clamp(72px, 8vw, 110px) var(--page-x) clamp(56px, 6vw, 84px);
 }
 
-.maker-signature > p,
 .maker-signature > span {
   font: 500 10px/1.2 var(--mono);
   letter-spacing: 0.13em;
+  text-align: right;
 }
 
-.maker-signature > p {
-  position: relative;
-  z-index: 2;
-  margin: 0 0 -16px;
-  padding: 10px 14px;
-  background: var(--paper);
-  border: 1px solid var(--ink);
-  box-shadow: 4px 4px 0 var(--ink);
-  transform: rotate(2deg);
-}
-
-.maker-signature > span {
-  max-width: 36ch;
-  margin-top: 24px;
-}
-
-/* Cool Guy corner sticker — studio signature on every product page,
-   feet cropped by the section's bottom edge. */
-.coolguy-corner {
-  position: absolute;
-  z-index: 3;
-  bottom: -34px;
-  left: clamp(18px, 4vw, 56px);
-  width: 150px;
-}
-
-.coolguy-corner-button {
-  appearance: none;
+.maker-badge {
   display: block;
-  width: 100%;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  transform: rotate(-6deg);
-}
-
-.coolguy-corner-button img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.coolguy-corner-button:focus-visible {
-  outline: 3px solid var(--ink);
-  outline-offset: 5px;
-}
-
-.coolguy-bubble {
-  position: absolute;
-  z-index: 4;
-  bottom: 118px;
-  left: 92px;
-  padding: 10px 14px;
-  border: 2px solid var(--ink);
-  background: #fff;
-  box-shadow: 4px 4px 0 var(--ink);
-  color: var(--ink);
-  font: 700 12px/1 var(--mono);
-  letter-spacing: 0.08em;
-  white-space: nowrap;
-  transform: rotate(-2deg) scale(0);
-  transform-origin: 0 100%;
-  transition: transform 220ms cubic-bezier(0.2, 0, 0, 1);
-  pointer-events: none;
-}
-
-.coolguy-bubble[data-open="true"] {
-  transform: rotate(-2deg) scale(1);
-}
-
-.coolguy-bubble-tail {
-  position: absolute;
-  bottom: -9px;
-  left: 10px;
-  width: 14px;
-  height: 14px;
-  border-right: 2px solid var(--ink);
-  border-bottom: 2px solid var(--ink);
-  background: #fff;
-  transform: rotate(45deg) skew(12deg, 12deg);
-}
-
-.maker-sticker {
-  display: block;
-  width: clamp(300px, 42vw, 600px);
+  width: clamp(210px, 22vw, 300px);
   min-width: 40px;
   min-height: 40px;
-  filter: drop-shadow(13px 15px 0 #11ed32) drop-shadow(0 18px 22px rgba(0, 0, 0, 0.16));
   text-decoration: none;
-  transform: rotate(-2deg);
+  transform: rotate(-4deg);
   transition-property: transform;
   transition-duration: 180ms;
   transition-timing-function: ease;
 }
 
-.maker-sticker:hover {
-  transform: translateY(-5px) rotate(1deg);
+.maker-badge:hover {
+  transform: translateY(-5px) rotate(-1deg);
 }
 
-.maker-sticker:active {
-  transform: translateY(-1px) rotate(0) scale(0.96);
+.maker-badge:active {
+  transform: translateY(-1px) rotate(-2deg) scale(0.96);
 }
 
-.maker-sticker img {
+.maker-badge img {
   display: block;
   width: 100%;
   height: auto;
@@ -572,23 +484,11 @@ button:focus-visible {
   }
 
   .maker-signature {
-    min-height: 500px;
-    padding: 56px 18px 46px;
+    padding: 64px 18px 48px;
   }
 
-  .maker-sticker {
-    width: min(84vw, 390px);
-    filter: drop-shadow(9px 10px 0 #11ed32) drop-shadow(0 13px 18px rgba(0, 0, 0, 0.16));
-  }
-
-  .coolguy-corner {
-    bottom: -26px;
-    width: 120px;
-  }
-
-  .coolguy-bubble {
-    bottom: 96px;
-    left: 74px;
+  .maker-badge {
+    width: min(58vw, 250px);
   }
 
   .site-footer {
@@ -635,8 +535,7 @@ button:focus-visible {
   }
 
   .build-button,
-  .maker-sticker,
-  .coolguy-bubble {
+  .maker-badge {
     transition-duration: 0.01ms;
   }
 }
