@@ -168,20 +168,3 @@ if (bubbleToggle && bubble) {
     }
   });
 }
-
-// Sassy edge notes rotate on a slow loop.
-const SASS_LINES = [
-  "NO BUSINESS MODEL, NO PROBLEM",
-  "SHIPPED ON A TUESDAY",
-  "GRIP TAPE & DUCT TAPE",
-  "IDEAS WE CAN’T LEAVE ALONE",
-];
-const sassNote = document.querySelector("[data-sass]");
-let sassIndex = 0;
-
-if (sassNote) {
-  window.setInterval(() => {
-    sassIndex = (sassIndex + 1) % SASS_LINES.length;
-    sassNote.textContent = SASS_LINES[sassIndex];
-  }, 4000);
-}
